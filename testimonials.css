@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box  ;
+}
+
+/* Header Section */
+header{
+    display: flex;
+    height: 100px;
+    background-color: rgb(95, 158, 160);
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.35);  
+}
+
+.logo{
+    width: 120px;
+    height: 90px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+
+.restaurant_name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Main Section */
+
+.lounge{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 2%;
+}
+
+.cmmt{
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+/* Footer Section */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.link{
+ max-width: 25px;  /* Set to your desired size */
+  height: auto;      /* Maintains aspect ratio */
+  display: block;
+}

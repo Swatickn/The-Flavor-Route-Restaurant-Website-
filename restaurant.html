@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="restaurant.css">
+    <title>Restaurant</title>
+</head>
+<body>
+
+    <!-- Header Section  -->
+
+    <header>
+        <div class="restaurant_name">Our Restaurant</div>
+        <img class="logo" src="logo.png" alt="logo">
+    </header>
+
+    <!-- Main Section  -->
+
+    <main>
+
+        <div class="form_container">
+
+        <form action="">
+            <div class="text">Book Your Table Now :</div>
+            <div>
+            <label for="Name">Name</label>
+            <input class="form_box" type="Text" name="Name" id="Name" placeholder="Enter Your Name" required>
+            </div>
+            <br>
+            <div>
+            <label for="Contact No.">Contact No.</label>
+            <input class="form_box" type="tel" name="Contact No." id="Contact No." placeholder="Enter Your Contact Number" required>
+            </div>
+             <br>
+            <div>
+                <label for="Email">Email</label>
+                <input class="form_box" type="email" name="Email" id="Email" placeholder="Enter Email">
+            </div>
+            <br>
+            <div>
+                <label for="Select Location">Select Location</label>
+                 <select class="form_box" id="Locations" required>
+                    <option  value="" disabled selected>Select a destination</option>
+                    <option value="Agra">Agra</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Amritsar">Amritsar</option>
+                    <option value="Aurangabad">Aurangabad</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Bhubaneswar">Bhubaneswar</option>
+                    <option value="Cuttack">Cuttackr</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Darjeeling">Darjeeling</option>
+                    <option value="Dehradun">Dehradun</option>
+                    <option value="Durg">Durg</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Faizabad">Faizabad</option>
+                    <option value="Gandhinagar">Gandhinagar</option>
+                    <option value="Gwalior">Gwalior</option>
+                    <option value="Guwahati">Guwahati</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Haldwani">Haldwani</option>
+                    <option value="Hubballi">Hubballi</option>
+                    <option value="Imphal">Imphal</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Itanagar">Itanagar</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Jodhpur">Jodhpur</option>
+                    <option value="Jamshedpur">Jamshedpur</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Kollam">Kollam</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Mangalore">Mangalore</option>
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Noida">Noida</option>
+                    <option value="Nellore">Nellore</option>
+                    <option value="Panaji">Panaji</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Rajkot">Rajkot</option>
+                    <option value="Raipur">Raipur</option>
+                    <option value="Ranchi">Ranchi</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Siliguri">Siliguri</option>
+                    <option value="Shimla">Shimla</option>
+                    <option value="Tirupati">Tirupatil</option>
+                    <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                    <option value="Trichy">Trichy</option>
+                    <option value="Vijayawada">Vijayawada</option>
+                    <option value="Varanasi">Varanasi</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Warangal">Warangal</option>
+                    <option value="Yavatmal">Yavatmal</option>
+                    <option value="Ziro">Ziro</option>
+            </div>
+            <br>
+
+             <div>
+                <select name="Select Lounge" id="Select Lounge">
+                 <label for="Select Lounge">Select Lounge</label>
+                 <select class="form_box" id="Lounges" required>
+                    <option value="" disabled selected>Select Lounge</option>
+                    <option value="Velvet Ember Lounge">Velvet Ember Lounge</option>
+                    <option value="The Spice Deck">The Spice Deck</option>
+                    <option value="Saffron & Smoke">Saffron & Smoke</option>
+                    <option value="Route 22 Lounge">Route 22 Lounge</option>
+                    <option value="The Banyan Bar">The Banyan Bar</option>
+                    <option value="Noor lounge">Noor Lounge</option>
+                </select>
+                </div> 
+                <br>
+               <p class="text_2">*To Check all lounges scrool down</p> 
+<br>
+               
+        <div>
+               <label for="date">Booking Date</label>
+               <input class="form_box" type="date" name="Date" id="Date" placeholder="Enter Booking Date" required>
+        </div>
+               <br>
+        <div>
+               <label for="time">Time</label>
+               <input class="form_box" type="time" name="time" id="time" placeholder="Enter Time" required>
+        </div>
+        
+        <br>
+        
+            <label for="Special Request">Special Request</label>
+           <br>
+            <textarea class="special_box" name="Special Request" id="Special Request" rows="6"></textarea>
+
+        <br>
+
+        <button class="button">Book</button>  
+                
+         </form>  
+         
+        </div>
+<hr class="divider">
+    <br>
+
+    <div class="name">Floor & Lounges</div>
+
+    <div class="images_container">
+        <ul>
+                <div>
+                <p class="lounge_name">Velvet Ember Lounge - </p> 
+                <br>
+                <p class="tagline">Warm, luxurious, and perfect for evening cocktails and soft jazz.</p>
+                <br>
+                <p><b>Theme-</b> Luxe and moody, with dark velvets, brass accents, and glowing candlelight. Live jazz or soft blues in the background.</p>
+                <p><b>Signature Drink-</b>- Crimson Smoke — pomegranate, clove-infused syrup, bourbon (or pomegranate-cinnamon mocktail) served over smoked ice.</p>
+                <p><b>Tagline-</b> “India’s spice trail, reimagined.”</p>
+
+                </ul>
+                <img src="https://hoteldesigns.net/wp-content/uploads/2023/01/A-wide-angle-of-a-Velvet-draped-cocktail-bar.jpg" alt="Velvet" width="373" height="300">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.xy2oXTC9DSKE1xbVos1qaQHaEo?pid=ImgDet&w=474&h=296&rs=1&o=7&rm=3" alt="Velvet" width="373" height="300">
+                <img src="https://q-xx.bstatic.com/xdata/images/hotel/max750/323546047.jpg?k=e9a2a42424f28a22ddfe60196305c73290a3010d0ff21bd8cbcbcb0f5a22ce96&o=" alt="velvet" width="373" height="300">
+                <img src="https://rabda-entries.s3.amazonaws.com/store/2023/rouge-room/image/33971/file/xlarge-ab3ea819e5e6a43f4b0b8dbbde7eceb5.jpg" alt="Velvet" width="373" height="300">
+                </div>
+                
+<br>
+<br>
+          <ul>
+            <div>
+                <p class="lounge_name">The Spice Deck -</p>
+                <br>
+                <p class="tagline"> A rooftop or terrace lounge inspired by India’s rich spice heritage.</p>
+                <br>
+                <p><b>Theme-</b>Open-air terrace with warm-toned woods, hanging spice baskets, and terracotta murals. Perfect for dusk hangouts.</p>
+                <p><b>Signature Drink -</b>- Masala Mojito — muddled mint, lime, roasted cumin, and soda with a dash of tamarind.</p>
+                <p><b>Tagline-</b>“India’s spice trail, reimagined.”</p>
+            </ul>
+            <img src="https://i.pinimg.com/736x/43/61/17/43611724b8bea2451c04fdac9b1fbe5a.jpg" alt="Roof" width="373" height="300">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/674e48166419431.64185669c6a08.png" alt="Roof" width="373" height="300">
+            <img src="https://thumbs.dreamstime.com/b/kazbegi-winter-winter-time-mountain-kazbegi-third-highest-mountain-caucasus-shot-georgia-166150695.jpg" alt="Roof" width="373" height="300">
+            <img src="https://www.therooftopguide.com/rooftop-bars-in-virginia-beach/Bilder/orions-roof-600-1.jpg" alt="Roof" width="373" height="300">
+           </div>
+<br>
+<br>
+                <div>
+                    <ul>
+                    <p class="lounge_name">Saffron & Smoke -</p>
+                    <br>
+                    <p class="tagline">Earthy, aromatic, and ideal for a fusion tapas and grill concept.</p>
+                    <br>
+                    <p><b>Theme -</b>Earthy textures, open grills, and golden saffron hues. Artisanal tapas and smoke-plated entrees take center stage.</p>
+                    <p><b>Signature Drink -</b>- Sunset Saffron Fizz — saffron, cardamom, orange zest, and tonic with a hint of smoke.</p>
+                    <p><b>TagLine -</b>-  “Where tradition is fired to life.”</p>
+                </ul>
+                <img src="https://tse2.mm.bing.net/th/id/OIP.lZV5HyX5BJuhkIgCVvjhZAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Plant" width="373" height="300">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.6pOH1HgRTx-L1Rq5bqvzUAHaJC?pid=ImgDet&w=474&h=578&rs=1&o=7&rm=3" alt="Plant" width="373" height="300">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.qKQXrvZXT6cfHMJuJoRw-AHaE8?w=1200&h=800&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Plant" width="373" height="300">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/8a/c1/6c/botanica-at-vin-seminyak.jpg?w=1200&h=-1&s=1" alt="Plant" width="373" height="300">
+                </div>
+<br>
+<br>
+                <div>
+                    <ul>
+                    <p class="lounge_name">Route 22 Lounge -</p>
+                    <br>
+                    <p class="tagline">A nod to your founding year (2022) and the idea of a flavorful journey.</p>
+                    <br>
+                    <p><b>Theme -</b>Travel-inspired with vintage maps, leather booths, and a mini “passport menu” featuring drinks from Indian regions.</p>
+                    <p><b>Signature Drink -</b>- - Traveler’s Tonic — kokum, lemongrass, Himalayan salt, and gin or tonic water</p>
+                    <p><b>TagLine -</b>-  “Tasting India, mile by mile.”</p>
+                </ul>
+                <img src="https://i.pinimg.com/originals/70/45/68/704568eebeb49c347cb9bacc371cbefc.jpg" alt="Retro" width="373" height="300">
+                <img src="https://i.pinimg.com/originals/16/5b/b8/165bb88e74f607089d1efc25e7e09f56.jpg" alt="Retro" width="373" height="300">
+                <img src="https://i.etsystatic.com/28399839/r/il/9eddaf/6041010410/il_794xN.6041010410_px7h.jpg" alt="Retro" width="373" height="300">
+                <img src="https://buildingandinteriors.com/wp-content/uploads/2022/07/Aandh-Interior-designers-in-Hyderabad-3.webp" alt="Retro" width="373" height="300">
+                </div>
+<br>
+<br>
+                <div>
+                    <ul>
+                    <p class="lounge_name">The Banyan Bar -</p>
+                    <br>
+                    <p class="tagline">Rooted in Indian tradition, with a modern twist—great for a garden or courtyard setting.</p>
+                    <br>
+                    <p><b>Theme -</b> Garden-lounge meets forest café—natural wood, ambient green lighting, and banyan-inspired wall art. Very Zen.</p>
+                    <p><b>Signature Drink -</b>Neem & Nectar — tulsi, jaggery, citrus, muddled with herbal bitters.</p>
+                    <p><b>TagLine -</b>-  “Rooted in calm. Poured with soul.”</p>
+                    </ul>
+                    <img src="https://th.bing.com/th/id/R.0df7478a242f86d3a843796bc6611e38?rik=BkE5K6dI1j%2bN6Q&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f60a3687912cea21e667234da%2ft%2f64e7f458b55ccd5f3b74ef2a%2f1692922983787%2fBTTHKB_KP_1120_dining_kredkaew%2bbar_HR0001-1.jpg%3fformat%3d1500w&ehk=AFLQH2Nt%2bkpU4CzrWZ0cvHDHwrA0ag0I2nuogoevwoY%3d&risl=&pid=ImgRaw&r=0" alt="Garden" width="373" height="300">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/27/6f/a1/outdoor-space-of-white.jpg?w=700&h=-1&s=1" alt="Garden" width="373" height="300">       
+                    <img src="https://secure.s.forbestravelguide.com/img/properties/four-seasons-resort-the-nam-hai-hoi-an/extra-large/four-seasons-resort-the-nam-hai-hoi-an-the-bar.jpg" alt="Garden" width="373" height="300">
+                    <img src="https://www.banyantree.com/assets/2021-10/Kredkaew-Bar4_-1920-x1080.jpg" alt="Garden" width="373" height="300">
+                </div>
+<br>
+<br>
+                <div>
+                    <ul>
+                    <p class="lounge_name">Noor Lounge - </p>
+                    <br>
+                    <p class="tagline">Meaning “light” in Arabic and Urdu, perfect for a serene, ambient space with soft lighting and soulful music.</p>
+                    <br>
+                    <p><b>Theme -</b> Mystical, ambient space with lattice lights, soft gold upholstery, and Sufi instrumental music by night.</p>
+                    <p><b>Signature Drink -</b> -  Moon Mist — rose water, lychee, elderflower, topped with a mist of edible shimmer.</p>
+                    <p><b>TagLine -</b>-  “A glow beyond the glass.”</p>
+                    </ul>
+                    <img src="https://img.freepik.com/premium-photo/cozy-outdoor-lounge-features-comfortable-seating-ambient-lights-creating-welcoming-atmosphere_922936-35087.jpg" alt="noor" width="373" height="300">
+                    <img src="https://www.theestateyountville.com/wp-content/uploads/2023/06/TEY_Gatherings_Nav@2X-1536x862.jpg" alt="noor" width="373" height="300">
+                    <img src="https://th.bing.com/th/id/R.d260bf7d677a0340f453a28242b85849?rik=ggtXx8ZQmQHS2A&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f5ee148273642dc73d7318b36%2f5eea02e4c0784e4a31e3ab9f%2f5eea041ac0784e4a31e3dc8d%2f1593781757644%2f%3fformat%3d1500w&ehk=B478UjI8oieavdrwDo8hvEF7NCZtPiXB7GsgfzC6tz4%3d&risl=&pid=ImgRaw&r=0" alt="noor" width="373" height="300">
+                    <img src="https://www.brides.com/thmb/-VEWn6F-cd4C5uApV2gqQTMrC10=/715x0/filters:no_upscale():max_bytes(150000):strip_icc()/gina-and-luke-wedding-50-aeeb3f79d7144f8686b5b9fb48813376.jpg" alt="noor" width="373" height="300">
+                </div>
+
+
+
+            </ul>
+    </div>
+
+    </div> 
+        
+    </main>
+<hr>
+    <footer>
+        <p>Developed by Swatick Nandy</p>
+        <a href="https://www.linkedin.com/in/swatick-nandy-658a162a6/"><img class="link" src="linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/Swatickn"><img class="link" src="github.png" alt="github"></a>
+        
+    </footer>
+    
+</body>
+</html>
